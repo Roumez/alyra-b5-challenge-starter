@@ -7,22 +7,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
-  <title>Alyra Mag</title>
+  <title>AlyraMag</title>
 </head>
 
 <body class="m-0">
 
   <!-- Start Navbar -->
 
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="row">
+
+  <div class="row w-100">
     <header>
       <h1 class="text-center">Alyra Mag</h1>
     </header>
-
     <nav class="navbar navbar-expand-md navbar-light bg-light position-sticky fixed-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -62,12 +58,14 @@
       </div>
     </nav>
 
-    <container>
+    <div>
       <div class="container">
         <div class="row">
           <div class="container col-sm-12 col-md-9 ">
             <div class="shadow bg-body p-4 m-3 rounded">
-              <img src="images/big_image_1.jpg" class="img-fluid" alt="...">
+              <a class="text-decoration-none text-dark" href="category.html">
+                <img src="images/big_image_1.jpg" class="img-fluid" alt="...">
+              </a>
               <h1 class="text-center p-3 pb-0">Contact Us</h1>
               <p class="text-center">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                 mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada
@@ -119,7 +117,9 @@
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis, ut dicta
                 eaque ipsa laudantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis, ut dicta
                 eaque ipsa laudantium!</p>
-              <button class="btn btn-dark" type="submit">Read my bio</button>
+              <a class="text-decoration-none text-dark" href="category.html">
+                <button class="btn btn-dark" type="submit">Read my bio</button>
+              </a>
               <div class="d-flex align-items-center m-3 gap-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-facebook" viewBox="0 0 16 16">
@@ -150,42 +150,57 @@
                 <img src="images/img_2.jpg" class="img-fluid d-block w-25 " alt="...">
                 <div>
                   <p class="text-secondary">March 15, 2018</p>
-                  <p class="articleFonts">How to Find the Video Games of your Youth</p>
+                  <a class="text-decoration-none text-dark" href="category.html">
+                    <p class="articleFonts">How to Find the Video Games of your Youth</p>
+                  </a>
                 </div>
               </article>
               <article class="d-flex mb-3">
                 <img src="images/img_4.jpg" class="img-fluid d-block w-25" alt="...">
                 <div>
                   <p class="text-secondary">March 15, 2018</p>
-                  <p class="articleFonts">How to Find the Video Games of your Youth</p>
+                  <a class="text-decoration-none text-dark" href="category.html">
+                    <p class="articleFonts">How to Find the Video Games of your Youth</p>
+                  </a>
                 </div>
               </article>
               <article class="d-flex mb-3">
                 <img src="images/img_12.jpg" class="img-fluid d-block w-25 " alt="...">
                 <div>
                   <p class="text-secondary">March 15, 2018</p>
-                  <p class="articleFonts">How to Find the Video Games of your Youth</p>
+                  <a class="text-decoration-none text-dark" href="category.html">
+                    <p class="articleFonts">How to Find the Video Games of your Youth</p>
+                  </a>
                 </div>
+
               </article>
             </section>
             <!-- 4e section de notre sidebar -->
             <section class="container shadow mb-3 p-2">
               <h2>Categories</h2>
               <div class="d-flex justify-content-between border-bottom border-secondary">
-                <p>Food</p>
-                <p>(12)</p>
+                <a class="text-decoration-none text-dark" href="category.html">
+                  <p>Food</p>
+                  <p>(12)</p>
+                </a>
               </div>
               <div class="d-flex justify-content-between border-bottom border-secondary">
-                <p>Travel</p>
-                <p>(22)</p>
+                <a class="text-decoration-none text-dark" href="category.html">
+                  <p>Travel</p>
+                  <p>(22)</p>
+                </a>
               </div>
               <div class="d-flex justify-content-between border-bottom border-secondary">
-                <p>Lifestyle</p>
-                <p>(37)</p>
+                <a class="text-decoration-none text-dark" href="category.html">
+                  <p>Lifestyle</p>
+                  <p>(37)</p>
+                </a>
               </div>
               <div class="d-flex justify-content-between border-bottom border-secondary">
-                <p>Business</p>
-                <p>(42)</p>
+                <a class="text-decoration-none text-dark" href="category.html">
+                  <p>Business</p>
+                  <p>(42)</p>
+                </a>
               </div>
               <div class="d-flex justify-content-between">
                 <p>Adventure</p>
@@ -194,26 +209,28 @@
             </section>
             <section class="container  align-items-center shadow mb-3 p-2">
               <h2 class="text-start">Tags</h2>
-              <button type="button" class="btn btn-secondary mb-3">Travel</button>
-              <button type="button" class="btn btn-secondary mb-3">Adventure</button>
-              <button type="button" class="btn btn-secondary mb-3">Food</button>
-              <button type="button" class="btn btn-secondary mb-3">Lifestyle</button>
-              <button type="button" class="btn btn-secondary mb-3">Business</button>
-              <button type="button" class="btn btn-secondary mb-3">Freelancing</button>
-              <button type="button" class="btn btn-secondary mb-3">Travel</button>
-              <button type="button" class="btn btn-secondary mb-3">Adventure</button>
-              <button type="button" class="btn btn-secondary mb-3">Food</button>
-              <button type="button" class="btn btn-secondary mb-3">Lifestyle</button>
-              <button type="button" class="btn btn-secondary mb-3">Business</button>
-              <button type="button" class="btn btn-secondary mb-3">Freelancing</button>
+              <a class="text-decoration-none text-dark" href="category.html">
+                <button type="button" class="btn btn-secondary mb-3">Travel</button>
+                <button type="button" class="btn btn-secondary mb-3">Adventure</button>
+                <button type="button" class="btn btn-secondary mb-3">Food</button>
+                <button type="button" class="btn btn-secondary mb-3">Lifestyle</button>
+                <button type="button" class="btn btn-secondary mb-3">Business</button>
+                <button type="button" class="btn btn-secondary mb-3">Freelancing</button>
+                <button type="button" class="btn btn-secondary mb-3">Travel</button>
+                <button type="button" class="btn btn-secondary mb-3">Adventure</button>
+                <button type="button" class="btn btn-secondary mb-3">Food</button>
+                <button type="button" class="btn btn-secondary mb-3">Lifestyle</button>
+                <button type="button" class="btn btn-secondary mb-3">Business</button>
+                <button type="button" class="btn btn-secondary mb-3">Freelancing</button>
+              </a>
             </section>
           </aside>
         </div>
       </div>
-    </container>
+    </div>
     <footer class="bg-dark p-5 text-white text-center">
       &copy; 2020 Made with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-        class="bi bi-heart-fill text-danger" aria-label=love" role="img" viewBox="0 0 16 16">
+        class="bi bi-heart-fill text-danger" aria-label="love" role="img" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
       </svg> for Alyra
     </footer>
@@ -221,6 +238,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"></script>
+  </div>
 </body>
 
 </html>
