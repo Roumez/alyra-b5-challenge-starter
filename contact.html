@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
   <title>Alyra Mag</title>
 </head>
 
-<body>
+<body class="m-0">
+
+  <!-- Start Navbar -->
+
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,7 +23,7 @@
       <h1 class="text-center">Alyra Mag</h1>
     </header>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light ">
+    <nav class="navbar navbar-expand-md navbar-light bg-light position-sticky fixed-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,42 +32,40 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+              <a class="nav-link " aria-current="page" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Travel</a>
+              <a class="nav-link" href="/blog-single.html">Travel</a>
             </li>
             <li class="nav-item">
               <div class="dropdown">
-                <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                <a class="btn btn-light dropdown-toggle text-secondary" role="button" id="dropdownMenuLink"
                   data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
-                <ul class="dropdown-menu bg-light">
+                <ul class="dropdown-menu">
                   <li class="nav-item ">
-                    <a class="nav-link dropdown-item text-dark" href="#">Lifestyle</a>
+                    <a class="nav-link dropdown-item text-dark " href="/category.html">Lifestyle</a>
                   <li class="nav-item">
-                    <a class="nav-link dropdown-item text-dark" href="#">food</a>
+                    <a class="nav-link dropdown-item text-dark" href="/category.html">food</a>
                   <li class="nav-item">
-                    <a class="nav-link dropdown-item text-dark" href="#">adventure</a>
+                    <a class="nav-link dropdown-item text-dark" href="/category.html">adventure</a>
                   <li class="nav-item">
-                    <a class="nav-link dropdown-item text-dark" href="#">Travel</a>
+                    <a class="nav-link dropdown-item text-dark" href="/category.html">Travel</a>
                   <li class="nav-item">
-                    <a class="nav-link dropdown-item text-dark" href="#">Business</a>
+                    <a class="nav-link dropdown-item text-dark" href="/category.html">Business</a>
                 </ul>
               </div>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">contact</a>
+              <a class="nav-link active" href="/contact.html">contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    </li>
-    </ul>
 
     <container>
       <div class="container">
         <div class="row">
-          <div class="container col-sm-12 col-md-8 ">
+          <div class="container col-sm-12 col-md-9 ">
             <div class="shadow bg-body p-4 m-3 rounded">
               <img src="images/big_image_1.jpg" class="img-fluid" alt="...">
               <h1 class="text-center p-3 pb-0">Contact Us</h1>
@@ -93,7 +95,7 @@
             </div>
           </div>
 
-          <aside class="col-sm-12 col-md-4 ">
+          <aside class="container col-md-3">
             <!-- 1ere section de notre sidebar -->
             <section class="row">
               <nav class="navbar navbar-light bg-white">
@@ -111,15 +113,14 @@
               </nav>
             </section>
             <!-- 2e section de notre sidebar -->
-            <section class="container d-flex flex-column align-items-center shadow mt-3 mb-3 p-2">
-
-              <img src="images/person_1.jpg" class="img-fluid rounded-circle d-block w-25" alt="...">
+            <section class="container d-flex flex-column align-items-center shadow my-3 p-3">
+              <img src="images/person_1.jpg" class="img-fluid rounded-circle d-block m-3 w-50" alt="...">
               <h2 class="text-center">David Craig</h2>
               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis, ut dicta
                 eaque ipsa laudantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis, ut dicta
                 eaque ipsa laudantium!</p>
               <button class="btn btn-dark" type="submit">Read my bio</button>
-              <div class="align-items-center">
+              <div class="d-flex align-items-center m-3 gap-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-facebook" viewBox="0 0 16 16">
                   <path
@@ -143,27 +144,27 @@
               </div>
             </section>
             <!-- 3e section de notre sidebar -->
-            <section class="container d-flex flex-column shadow mb-3 p-2">
+            <section class="container shadow mb-3 p-3">
               <h2>Popular post</h2>
-              <article class="d-flex justify-content-center mb-1">
-                <img src="images/img_2.jpg" class="img-fluid d-block w-25" alt="...">
+              <article class="d-flex mb-3">
+                <img src="images/img_2.jpg" class="img-fluid d-block w-25 " alt="...">
                 <div>
-                  <p>March 15, 2018</p>
-                  <p>How to Find the Video Games of your Youth</p>
+                  <p class="text-secondary">March 15, 2018</p>
+                  <p class="articleFonts">How to Find the Video Games of your Youth</p>
                 </div>
               </article>
-              <article class="d-flex justify-content-center mb-1">
+              <article class="d-flex mb-3">
                 <img src="images/img_4.jpg" class="img-fluid d-block w-25" alt="...">
                 <div>
-                  <p>March 15, 2018</p>
-                  <p>How to Find the Video Games of your Youth</p>
+                  <p class="text-secondary">March 15, 2018</p>
+                  <p class="articleFonts">How to Find the Video Games of your Youth</p>
                 </div>
               </article>
-              <article class="d-flex justify-content-center mb-1">
-                <img src="images/img_12.jpg" class="img-fluid d-block w-25" alt="...">
+              <article class="d-flex mb-3">
+                <img src="images/img_12.jpg" class="img-fluid d-block w-25 " alt="...">
                 <div>
-                  <p>March 15, 2018</p>
-                  <p>How to Find the Video Games of your Youth</p>
+                  <p class="text-secondary">March 15, 2018</p>
+                  <p class="articleFonts">How to Find the Video Games of your Youth</p>
                 </div>
               </article>
             </section>
